@@ -29,8 +29,10 @@ VALUES('$name','$date','$running_hoursA','$running_hoursB','$tank_pressure','$ai
 // INSERT INTO `oxygen_plant` (`name`, `date`, `running_hoursA`, `running_hoursB`, `tank_pressure`, `air_leak`, `air_temperature`, `fan_motor`, `electrical_contacts`, `Comments`)
 //  VALUES ('nelson olale', 'current_timestamp()', '12.3', '15.8', 'okay', 'yes', 'yesyes', 'yes', 'yes', 'yes')
 
-if ($query) {
-    echo "<script>alert('Oxygen plant checklist form has been entered');</script>";
+if (mysqli_query($con, $query)) {
+    echo "<script>alert('LPG checklist form has been entered');</script>";
+} else {
+    echo "ERROR: Could not able to execute $query. " . mysqli_error($con);
 }
 }
 

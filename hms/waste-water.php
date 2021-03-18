@@ -22,8 +22,10 @@ if (isset($_POST['submit'])) {
    VALUES('$name','$date','$condition','$space_condition','$water_pump','$water_valve','$electrical_contacts','$water_leakage','$electrical_connection','$comment')";
 
 
-if ($query) {
-    echo "<script>alert('Waste water checklist form has been entered');</script>";
+if (mysqli_query($con, $query)) {
+    echo "<script>alert('LPG checklist form has been entered');</script>";
+} else {
+    echo "ERROR: Could not able to execute $query. " . mysqli_error($con);
 }
 }
 

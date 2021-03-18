@@ -58,8 +58,10 @@ if (isset($_POST['submit'])) {
      '$manuals_present', '$start_engine', '$pre_heating', '$motor_starts', '$oil_pressure', '$battery_charging', '$smells_lights_sounds', '$comments')";
    
 
-   if ($query) {
-    echo "<script>alert('Generator checklist form has been entered');</script>";
+   if (mysqli_query($con, $query)) {
+    echo "<script>alert('LPG checklist form has been entered');</script>";
+} else {
+    echo "ERROR: Could not able to execute $query. " . mysqli_error($con);
 }
    
 }

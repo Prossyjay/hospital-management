@@ -4,6 +4,7 @@ define('DB_USER','root');
 define('DB_PASS' ,'');
 define('DB_NAME', 'ugmcsystems');
 $con = mysqli_connect(DB_SERVER,DB_USER,DB_PASS,DB_NAME);
+// die(var_dump ($con));
 // Check connection
 if (mysqli_connect_errno())
 {

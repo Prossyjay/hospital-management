@@ -53,8 +53,10 @@ if (isset($_POST['submit'])) {
     '$unit_operating_pressure_chiller3','$unit_operating_pressure_chiller4','$condenser_coils_chiller1','$condenser_coils_chiller2',
     '$condenser_coils_chiller3','$condenser_coils_chiller4','$comments')";
 
-if ($query) {
-    echo "<script>alert('Air cooled checklist form has been entered');</script>";
+if (mysqli_query($con, $query)) {
+    echo "<script>alert('LPG checklist form has been entered');</script>";
+} else {
+    echo "ERROR: Could not able to execute $query. " . mysqli_error($con);
 }
 }
 

@@ -24,10 +24,11 @@ if (isset($_POST['submit'])) {
 
     $query = "INSERT INTO `lpgform` (`name`, `date`, `tank1`, `tank2`, `tank3`, `pressure`, `leakages`, `condition`, `cleanliness`, `comment` ) 
     VALUES('$name','$date','$tank1','$tank2','$tank3','$pressure','$leakages','$condition','$cleanliness','$comment')";
-
-if ($query) {
-    echo "<script>alert('LPG checklist form has been entered');</script>";
-}
+    if (mysqli_query($con, $query)) {
+        echo "<script>alert('LPG checklist form has been entered');</script>";
+    } else {
+        echo "ERROR: Could not able to execute $query. " . mysqli_error($con);
+    }
 
 }
 
@@ -98,9 +99,7 @@ if ($query) {
                                             <div class="panel-body">
                                                 <p style="color:red;"><?php echo htmlentities($_SESSION['msg']); ?>
                                                     <?php echo htmlentities($_SESSION['msg'] = ""); ?></p>
-                                                <form role="form" name="book" method="post">
-
-
+                                                <form role="form" name="lpgform" method="post">
 
 
                                                     <div class="form-group">
@@ -253,4 +252,5 @@ if ($query) {
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
 
 </body>
+
 </html>
