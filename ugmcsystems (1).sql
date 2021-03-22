@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 17, 2021 at 12:40 PM
+-- Generation Time: Mar 22, 2021 at 05:22 PM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.7
 
@@ -89,7 +89,8 @@ INSERT INTO `air_cooled_water1` (`id`, `name`, `date`, `evaporator_ref_pressure_
 (4, 'Esther Smith', '0000-00-00', '1234', '1234', '1234', '1234', 'yes', 'yes', 'yes', 'yes', 'yes', 'yes', 'yes', 'yes', 'yes', 'yes', 'yes', 'yes', 'yes', 'yes', 'no', 'no', 'no', 'no', 'no', 'no', 'no comment'),
 (5, 'Esther Smith', '0000-00-00', '1234', '1234', '1234', '1234', 'yes', 'yes', 'yes', 'yes', 'yes', 'yes', 'yes', 'yes', 'yes', 'yes', 'yes', 'yes', 'yes', 'yes', 'no', 'no', 'no', 'no', 'no', 'no', 'no comment'),
 (6, 'Jeffrey Nelson-Cofie', '2021-01-28', '246', '246', '246', '246', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'system check 246'),
-(7, 'Jeffrey Nelson-Cofie', '2021-01-28', '123', '123', '123', '123', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'system check working');
+(7, 'Jeffrey Nelson-Cofie', '2021-01-28', '123', '123', '123', '123', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'system check working'),
+(8, 'Sam Smith', '2021-03-22', '60', '60', '60', '60', 'N/A', 'N/A', 'N/A', 'N/A', 'N/A', 'N/A', 'N/A', 'N/A', 'Yes', 'N/A', 'N/A', 'N/A', 'N/A', 'N/A', 'N/A', 'N/A', 'N/A', 'N/A', 'N/A', 'N/A', 'NOT AVAILABLE VERSION');
 
 -- --------------------------------------------------------
 
@@ -196,7 +197,16 @@ INSERT INTO `doctorslog` (`id`, `uid`, `username`, `userip`, `loginTime`, `logou
 (31, NULL, 'test@demo.com', 0x3a3a3100000000000000000000000000, '2021-02-16 10:36:02', NULL, 0),
 (32, NULL, 'jnelsoncofie@gmail.com', 0x3a3a3100000000000000000000000000, '2021-02-16 10:36:37', NULL, 0),
 (33, 10, 'jnelsoncofie@gmail.com', 0x3a3a3100000000000000000000000000, '2021-02-16 10:39:42', '16-02-2021 04:10:34 PM', 1),
-(34, 10, 'jnelsoncofie@gmail.com', 0x3a3a3100000000000000000000000000, '2021-02-16 10:41:45', NULL, 1);
+(34, 10, 'jnelsoncofie@gmail.com', 0x3a3a3100000000000000000000000000, '2021-02-16 10:41:45', NULL, 1),
+(35, 10, 'jnelsoncofie@gmail.com', 0x3a3a3100000000000000000000000000, '2021-03-17 11:55:48', '17-03-2021 05:26:00 PM', 1),
+(36, NULL, 'test@gmail.com', 0x3a3a3100000000000000000000000000, '2021-03-17 11:56:22', NULL, 0),
+(37, 10, 'jnelsoncofie@gmail.com', 0x3a3a3100000000000000000000000000, '2021-03-17 11:56:49', '17-03-2021 05:27:52 PM', 1),
+(38, NULL, 'test@gmail.com', 0x3a3a3100000000000000000000000000, '2021-03-17 12:02:08', NULL, 0),
+(39, NULL, 'test@demo.com', 0x3a3a3100000000000000000000000000, '2021-03-17 12:02:40', NULL, 0),
+(40, 7, 'test@demo.com', 0x3a3a3100000000000000000000000000, '2021-03-17 12:02:54', '17-03-2021 05:34:23 PM', 1),
+(41, NULL, 'test@demo.com', 0x3a3a3100000000000000000000000000, '2021-03-17 12:04:42', NULL, 0),
+(42, 7, 'test@demo.com', 0x3a3a3100000000000000000000000000, '2021-03-17 12:05:00', '17-03-2021 05:40:54 PM', 1),
+(43, 10, 'jnelsoncofie@gmail.com', 0x3a3a3100000000000000000000000000, '2021-03-22 16:15:46', NULL, 1);
 
 -- --------------------------------------------------------
 
@@ -347,7 +357,9 @@ INSERT INTO `generator_inspection` (`id`, `name`, `date`, `running_hours`, `gene
 (18, 'nii sai', '2021-01-28', 125, 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', '', 'Yes', 'Yes', 'system check 125'),
 (19, 'Jeffrey Nelson-Cofie', '2021-01-28', 156, 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', '', 'Yes', 'Yes', 'system check 156'),
 (20, 'Jeffrey Nelson-Cofie', '2021-01-28', 156, 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'system check 156'),
-(21, 'John Nelson-Cofie', '2021-01-28', 2123, 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'system check 2123');
+(21, 'John Nelson-Cofie', '2021-01-28', 2123, 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'system check 2123'),
+(22, 'ESTHER MENSAH', '2021-03-18', 37, 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'SYSTEM CHECKS '),
+(23, 'Sam Smith', '2021-03-22', 70, 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'the system is working');
 
 -- --------------------------------------------------------
 
@@ -386,7 +398,12 @@ INSERT INTO `lpgform` (`id`, `name`, `date`, `tank1`, `tank2`, `tank3`, `pressur
 (10, 'Louis Piedu', '2021-01-25', 100, 58, 98, 'Good State', 'Yes', 'Good State', 'Good State', 'check 1'),
 (11, 'John okai', '2021-01-26', 100, 58, 98, 'Good State', 'Yes', 'Good State', 'Good State', 'fresh start'),
 (12, 'Jeffrey Nelson-Cofie', '2021-01-25', 100, 58, 98, 'Good State', 'Yes', 'Good State', 'Good State', 'good'),
-(13, 'Jeffrey Nelson-Cofie', '2021-01-26', 100, 58, 98, 'Good State', 'Yes', 'Good State', 'Good State', 'system check 2');
+(13, 'Jeffrey Nelson-Cofie', '2021-01-26', 100, 58, 98, 'Good State', 'Yes', 'Good State', 'Good State', 'system check 2'),
+(14, 'JAKE WILLSON', '2021-03-17', 100, 58, 98, 'Good State', 'Yes', 'Good State', 'Good State', 'checks'),
+(15, 'Nat Ofori', '2021-03-17', 150, 150, 152, 'Good State', 'Yes', 'Good State', 'Good State', 'Test 12345'),
+(16, 'nii sai nelson', '2021-03-18', 100, 58, 98, 'Bad State', 'No', 'Bad State', 'Bad State', '111222'),
+(17, 'nancy ako-odoi', '2021-03-18', 100, 200, 300, 'Bad State', 'No', 'Good State', 'Good State', 'post check'),
+(18, 'Sam Smith', '2021-03-22', 50, 50, 50, 'Bad State', 'No', 'Bad State', 'Bad State', 'checking in bad state');
 
 -- --------------------------------------------------------
 
@@ -418,7 +435,9 @@ INSERT INTO `oxygen_plant` (`id`, `name`, `date`, `running_hoursA`, `running_hou
 (3, 'nelson olale', '0000-00-00', 12, 16, 'okay', 'yes', 'yesyes', 'yes', 'yes', 'yes'),
 (4, '$name', '0000-00-00', 0, 0, '$tank_pressure', '$air_leak', '$air_temperature', '$fan_motor', '$electrical_contacts', '$comment'),
 (5, 'Jeffrey Nelson Cofie', '2021-01-25', 100, 100, 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'system check 13'),
-(6, 'Jeffrey Nelson-Cofie', '2021-01-25', 100, 1252, 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', '123');
+(6, 'Jeffrey Nelson-Cofie', '2021-01-25', 100, 1252, 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', '123'),
+(7, 'LUCY MENSAH', '2021-03-18', 24, 25, 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'CHECK  SYSTEMS'),
+(8, 'Sam Smith', '2021-03-22', 50, 50, 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'system check 12345');
 
 -- --------------------------------------------------------
 
@@ -559,7 +578,10 @@ INSERT INTO `userlog` (`id`, `uid`, `username`, `userip`, `loginTime`, `logout`,
 (51, 8, 'jnelsoncofie@gmail.com', 0x3a3a3100000000000000000000000000, '2021-01-28 15:34:08', '29-01-2021 03:04:09 PM', 1),
 (52, 8, 'jnelsoncofie@gmail.com', 0x3a3a3100000000000000000000000000, '2021-01-29 09:37:31', '16-02-2021 02:04:17 PM', 1),
 (53, 8, 'jnelsoncofie@gmail.com', 0x3a3a3100000000000000000000000000, '2021-02-16 08:36:08', '16-02-2021 04:04:49 PM', 1),
-(54, 8, 'jnelsoncofie@gmail.com', 0x3a3a3100000000000000000000000000, '2021-02-16 10:40:43', '16-02-2021 04:11:38 PM', 1);
+(54, 8, 'jnelsoncofie@gmail.com', 0x3a3a3100000000000000000000000000, '2021-02-16 10:40:43', '16-02-2021 04:11:38 PM', 1),
+(55, 8, 'jnelsoncofie@gmail.com', 0x3a3a3100000000000000000000000000, '2021-03-17 12:22:59', '18-03-2021 06:06:34 PM', 1),
+(56, 8, 'jnelsoncofie@gmail.com', 0x3a3a3100000000000000000000000000, '2021-03-18 12:42:24', NULL, 1),
+(57, 8, 'jnelsoncofie@gmail.com', 0x3a3a3100000000000000000000000000, '2021-03-22 15:08:01', '22-03-2021 09:45:32 PM', 1);
 
 -- --------------------------------------------------------
 
@@ -584,8 +606,6 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `fullName`, `address`, `city`, `gender`, `email`, `password`, `regDate`, `updationDate`) VALUES
-(2, 'Sarita pandey', 'New Delhi India', 'Delhi', 'female', 'test@gmail.com', 'f925916e2754e5e03f75dd58a5733251', '2016-12-30 05:34:39', '0000-00-00 00:00:00'),
-(3, 'Amit', 'New Delhi', 'New delhi', 'male', 'amit@gmail.com', 'f925916e2754e5e03f75dd58a5733251', '2017-01-07 06:36:53', '0000-00-00 00:00:00'),
 (4, 'Rahul Singh', 'New Delhi', 'New delhi', 'male', 'rahul@gmail.com', 'f925916e2754e5e03f75dd58a5733251', '2017-01-07 07:41:14', '0000-00-00 00:00:00'),
 (5, 'Amit kumar', 'New Delhi India', 'Delhi', 'male', 'amit12@gmail.com', 'f925916e2754e5e03f75dd58a5733251', '2017-01-07 08:00:26', '0000-00-00 00:00:00'),
 (6, 'Test user', 'New Delhi', 'Delhi', 'male', 'tetuser@gmail.com', 'f925916e2754e5e03f75dd58a5733251', '2019-06-23 18:24:53', '2019-06-23 18:36:09'),
@@ -629,7 +649,8 @@ INSERT INTO `waste_water` (`id`, `name`, `date`, `condition`, `space_condition`,
 (6, 'AMA DARTEY', '2021-01-25', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'SYSTEM CHECK FINAL'),
 (7, 'Jeffrey Nelson-Cofie LOUIS', '2021-01-25', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'good SYSTEM'),
 (8, 'nii sai', '2021-01-25', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'system check 25'),
-(9, 'nii sai', '2021-01-31', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'check 1');
+(9, 'nii sai', '2021-01-31', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'check 1'),
+(10, 'Sam Smith', '2021-03-22', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'yes commit version');
 
 -- --------------------------------------------------------
 
@@ -667,7 +688,8 @@ INSERT INTO `water_treatment_plant` (`id`, `name`, `date`, `equipment_condition`
 (7, 'JAMES KOBBY', '0000-00-00', 'GREAT', 'GOOD', 'GOOD', 'GOOD', 'GOOD', 'GOOD', 'GOOD', 'GOOD', 'GOOD', 'GOOD BETTER NEST'),
 (8, 'Jeffrey Nelson-Cofie', '2021-01-25', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', '', '', 'Yes', '111'),
 (9, 'Jeffrey Nelson-Cofie', '2021-01-25', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', '', '', 'Yes', '111'),
-(10, 'Jeffrey Nelson Cofie', '2021-01-26', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', '', '', 'Yes', 'check 1');
+(10, 'Jeffrey Nelson Cofie', '2021-01-26', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', '', '', 'Yes', 'check 1'),
+(11, 'Sam Smith', '2021-03-22', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', '', '', 'Yes', 'final check on post con');
 
 --
 -- Indexes for dumped tables
@@ -790,7 +812,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `air_cooled_water1`
 --
 ALTER TABLE `air_cooled_water1`
-  MODIFY `id` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `appointment`
@@ -808,7 +830,7 @@ ALTER TABLE `doctors`
 -- AUTO_INCREMENT for table `doctorslog`
 --
 ALTER TABLE `doctorslog`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 
 --
 -- AUTO_INCREMENT for table `doctorspecilization`
@@ -826,19 +848,19 @@ ALTER TABLE `generator_dailly_inspection  t`
 -- AUTO_INCREMENT for table `generator_inspection`
 --
 ALTER TABLE `generator_inspection`
-  MODIFY `id` int(250) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int(250) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT for table `lpgform`
 --
 ALTER TABLE `lpgform`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `oxygen_plant`
 --
 ALTER TABLE `oxygen_plant`
-  MODIFY `id` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `tblcontactus`
@@ -862,7 +884,7 @@ ALTER TABLE `tblpatient`
 -- AUTO_INCREMENT for table `userlog`
 --
 ALTER TABLE `userlog`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
 
 --
 -- AUTO_INCREMENT for table `users`
@@ -874,13 +896,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `waste_water`
 --
 ALTER TABLE `waste_water`
-  MODIFY `id` int(150) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(150) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `water_treatment_plant`
 --
 ALTER TABLE `water_treatment_plant`
-  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
