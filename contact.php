@@ -53,12 +53,14 @@ echo "<script>window.location.href ='contact.php'</script>";
 					
       			<div class="company_address">
 				     	<h2>UGMC Address  :</h2>
-						    	<p>500 Lorem Ipsum Dolor Sit,</p>
-						   		<p>22-56-2-9 Sit Amet, Lorem,</p>
-						   		<p>India</p>
-				   		<p>Phone:(00) 222 666 444</p>
-				   		<p>Fax: (000) 000 00 00 0</p>
-				 	 	<p>Email: <span>info@mycompany.com</span></p>
+						    	<p>UG Medical Centre,</p>
+						   		<p>Post Office Box LG 25,</p>
+						   		<p>Accra, Ghana</p>
+								<p>West Africa.</p>
+				   		<p>Phone:(+233) 302 550843</p>
+				   		<p>Phone: (+233) 3v02 550844</p>
+						<p>Phone: (+233) 302 550845</p>
+				 	 	<p>Email: <span>info@ugmc.ug.edu.gh</span></p>
 				   	
 				   </div>
 				</div>				
