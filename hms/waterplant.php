@@ -1,6 +1,7 @@
 <?php
     include('post_con/waterplant_con.php');
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -215,11 +216,6 @@
                     </div>
 
                     <!-- end: BASIC EXAMPLE -->
-
-
-
-
-
 
                     <!-- end: SELECT BOXES -->
 
