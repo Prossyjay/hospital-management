@@ -1,13 +1,7 @@
 <?php
-
 include('post_con/lpgcon.php');
-
-//breakphp
-
-
-
-
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
